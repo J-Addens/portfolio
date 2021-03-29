@@ -1,0 +1,28 @@
+body {
+  height: 100%;
+  font-family: sans-serif;
+  color: grey;
+}
+.about {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+.navbar {
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+}
+a {
+  color: white;
+  margin: 10px;
+}
+a:hover {
+  background-color: pink;
+  padding: 10px;
+  margin: 10px;
+}
