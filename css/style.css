@@ -1,28 +1,76 @@
-body {
-  height: 100%;
-  font-family: sans-serif;
-  color: grey;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-.about {
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  color: white;
-  padding: 50px;
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
 }
-.navbar {
-  background-color: purple;
+/* Navbar */
+#navbar {
   position: fixed;
-  top: 0;
   width: 100%;
-  padding: 10px;
+  padding: 15px 0;
+  background: crimson;
+  font-family: 'Ubuntu', sans-serif;
 }
-a {
-  color: white;
-  margin: 10px;
+#navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-a:hover {
-  background-color: pink;
-  padding: 10px;
-  margin: 10px;
+#navbar .logo a {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+#navbar .logo a span {
+  color: black;
+}
+#navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+#navbar .menu li a {
+  color: #fff;
+  margin-left: 25px;
+  font-weight: 500;
+  font-size: 18px;
+}
+#navbar .menu li a:hover {
+  color: black;
+}
+
+/* Home section */
+.home {
+  display: flex;
+  background-image: url('images/lake.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  color: black;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home-section .text1 {
+  font-size: 27px;
+  color: black;
+}
+.home .home-section .text2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -15px;
+}
+.home .home-section .text3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home-section .text3 span {
+  color: crimson;
+  font-weight: 500;
 }
