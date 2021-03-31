@@ -17,8 +17,11 @@
   position: fixed;
   width: 100%;
   padding: 15px 0;
-  background: crimson;
   font-family: 'Ubuntu', sans-serif;
+}
+#navbar .sticky {
+  padding: 15px 0;
+  background: crimson;
 }
 #navbar .max-width {
   display: flex;
@@ -42,26 +45,38 @@
   margin-left: 25px;
   font-weight: 500;
   font-size: 18px;
+  transition: color 0.3s ease;
 }
 #navbar .menu li a:hover {
   color: black;
 }
 
+/* Munu Button */
+.btn-menu {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
 /* Home section */
 .home {
   display: flex;
-  background-image: url("/images/lake.jpg");
+  background-image: url("/images/lakebw.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   height: 100vh;
-  color: black;
+  color: #fff;
   min-height: 500px;
   font-family: 'Ubuntu', sans-serif;
 }
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
 .home .home-section .text1 {
   font-size: 27px;
-  color: black;
+  color: #fff;
 }
 .home .home-section .text2 {
   font-size: 75px;
@@ -76,7 +91,56 @@
   color: crimson;
   font-weight: 500;
 }
-.home .home-section {
-  padding-right: 400px;
-  padding-bottom: 500px
+
+/* Responsive start button */
+@media (max-width: 987px) {
+  .max-width {
+    max-width: 1300px;
+    padding: 0 50px;
+  }
+  .btn-menu {
+    display: block;
+    z-index: 999;
+  }
+  #navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: grey;
+    text-align: center;
+    padding-top: 50px;
+    transition: all .5s;
+  }
+  #navbar .menu.active {
+    left: 0;
+  }
+  #navbar .menu li {
+    display: block;
+  }
+  #navbar .menu li a{
+    display: inline-block;
+    margin: 25px;
+    font-size: 25px;
+  }
+}
+
+/* About Section */
+.about {
+  background-color: black;
+  height: 100vh;
+  color: #fff;
+}
+.about img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+.about .title {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+.about p {
+  font-family: sans-serif;
 }

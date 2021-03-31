@@ -1,7 +1,5 @@
-let toggleNavStatus = false;
-
-let toggleNav = function() {
-  let getMenu = document.querySelector(".navbar");
-  let getMenuUl = document.querySelector(".navbar ul");
-  let getMenuA = document.querySelector(".navbar a");
-}
+$(document).ready(function(){
+  $('#icon').click(function(){
+    $('ul').toggleClass('active');
+  });
+})
