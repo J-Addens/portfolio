@@ -3,11 +3,13 @@ $(document).ready(function(){
     $('ul').toggleClass('active');
   });
 
-  $(window).scroll(function(){
-    if(this.scrollY >20){
-      $('.navbar').addClass('active');
-    } else {
-      $('.navbar').removeClass('active');
-    }
-  });
+  $(document).ready(function(){
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+          $("#navbar").css("background-color", "#555");
+        } else {
+          $("#navbar").css("background-color", "transparent");
+        }
+      });
+    });
 });

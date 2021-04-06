@@ -21,7 +21,7 @@
 }
 #navbar .sticky {
   padding: 15px 0;
-  background: crimson;
+  background: transparent;
 }
 #navbar .max-width {
   display: flex;
@@ -134,7 +134,7 @@ section {
   color: crimson;
   font-weight: 500;
 }
-.about p {
+p {
   font-family: sans-serif;
   text-align: justify;
 }
@@ -165,15 +165,47 @@ section {
   font-size: 25px;
   font-weight: 300;
   padding: 20px;
-  text-align: justify;
+  text-align: center;
 }
 .services .services-content .card {
-  width: calc(33% - 20px);
+  display: inline-block;
+  width: calc(33%);
+  height: 500px;
   background: #555;
   text-align: center;
   border-radius: 5px;
-  padding: 20px 25px;
+  padding: 20px;
   cursor: pointer;
+}
+.services .services-content .card i {
+  color: crimson;
+  font-size: 50px;
+}
+
+/* Portfolio Section */
+.portfolio {
+  background-color: #000;
+  height: 100vh;
+  color: #fff;
+}
+.portfolio .title {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  padding: 30px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #fff;
+  height: 100vh;
+  color: #000;
+}
+.contact .title {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  padding: 30px;
 }
 
 /* Responsive media */
