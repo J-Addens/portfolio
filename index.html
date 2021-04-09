@@ -3,19 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Portfolio Jesper Addens</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/ea2c050b50.js"></script>
     <script src="js/script.js"></script>
-    <script>
-      $(document).on('scroll', function(){
-        if ($(document).scrollTop()){
-          $('nav').addClass('active');
-        }
-        else $('nav').removeClass('active');
-        }
-      )}
-    </script>
   </head>
   <body>
     <nav class"navbar" id="navbar">
@@ -47,7 +38,7 @@
       <div class="max-width">
         <div class="aboutme-content">
           <div class="column left">
-            <img src="/images/Jepbw.jpeg" alt="Portrait">
+            <img src="images/Jepbw.jpeg" alt="Portrait">
           </div>
           <div class="column right">
             <h3 class="title">About me</h3>
@@ -93,6 +84,27 @@
           <h3 class="title">Portfolio</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+        <div class="card">
+          <div class="box">
+            <div class="text">RandoColor</div>
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="text">Einstein Tribute</div>
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="text">Form</div>
+            <img src="" alt="">
+          </div>
+      </div>
+      <div class="git">
+        <a class="git-link" href="#"><i class="fab fa-github"></i>
+ My GitHub</a>
       </div>
     </section>
 
@@ -102,8 +114,10 @@
           <h3 class="title">CONTACT</h3>
           <p>Want to know more?<br>Send me a email!</p>
           <form class="contact-form" action="index.html" method="post">
-            <input type="text" name="" value="">
-            <button type="button" name="button">Submit</button>
+            <input type="text" name="name" class="form-input" placeholder="Name" required><br>
+            <input type="email" name="email" class="form-input" required placeholder="Email"><br>
+            <textarea name="message" class="form-input" rows="8" cols="80" required placeholder="Message"></textarea><br>
+            <button class="btn" type="button" name="button">Submit</button>
           </form>
         </div>
       </div>
